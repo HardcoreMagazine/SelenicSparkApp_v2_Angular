@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.5.111-alpha">
+  <PropertyGroup>
+    <StartupCommand>npm start</StartupCommand>
+    <JavaScriptTestFramework>Jasmine</JavaScriptTestFramework>
+    <!-- Allows the build (or compile) script located on package.json to run on Build -->
+    <ShouldRunBuildScript>false</ShouldRunBuildScript>
+    <!-- Folder where production build objects will be placed -->
+    <PublishAssetsDirectory>$(MSBuildProjectDirectory)\dist</PublishAssetsDirectory>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties _1vscode_4launch_1json__JsonSchema="" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <ItemGroup>
+    <None Include=".vs\SelenicSparkApp_v2_Angular\FileContentIndex\e0ce26ce-a342-4553-8b4f-1e418520a894.vsidx" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptConfiguration Remove=".vs\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove=".vs\**" />
+  </ItemGroup>
+</Project>
