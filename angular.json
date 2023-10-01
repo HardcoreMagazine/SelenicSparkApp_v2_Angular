@@ -25,9 +25,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/lib/bootstrap/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/lib/bootstrap/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -90,9 +93,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/lib/bootstrap/css/bootstrap.min.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/lib/bootstrap/js/bootstrap.min.js"
+            ],
             "karmaConfig": "karma.conf.js"
           }
         }
