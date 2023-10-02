@@ -1,24 +1,9 @@
-<h1 id="tableLabel">Posts</h1>
-
-<p *ngIf="!posts"><em>Loading...</em></p>
-
-<table *ngIf="posts">
-    <thead>
-        <tr>
-            <th>PostID</th>
-            <th>Title</th>
-            <th>Text</th>
-            <th>Author</th>
-            <th>Created</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let post of posts">
-            <td>{{ post.postID }}</td>
-            <td>{{ post.title }}</td>
-            <td>{{ post.text }}</td>
-            <td>{{ post.author }}</td>
-            <td>{{ post.created }}</td>
-        </tr>
-    </tbody>
-</table>
+<div class="text-center">
+    <h2 *ngIf="user; else nouser" class="display-4">Welcome back, {{user.username}}!</h2>
+    <ng-template #nouser><h2 class="display-4">Hello & Welcome!</h2></ng-template>
+    <p>
+        This is a work-in-progress forum / blog project with ASP.NET MVC that may find it's way outside localhost in the future.
+        <br />
+        <a href="https://github.com/HardcoreMagazine/SelenicSparkApp" target="_blank">Visit project page on Github [v1]</a>
+    </p>
+</div>

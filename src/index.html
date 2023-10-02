@@ -6,48 +6,49 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="stylesheet" href="css/home.css" />
-  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+  <link type="text/css" href="./css/basePage.css" />
+  <link type="text/css" href="./lib/bootstrap/css/bootstrap.min.css" />
 </head>
 <body>
   <header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
       <div class="container-fluid">
-        <a class="navbar-brand">SelenicSpark</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="/">SelenicSpark</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <!--LINKS GO HERE-->
         <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-            <ul class="navbar-nav flex-grow-1">
-                <li class="nav-item">
-                    <a class="nav-link text-dark">Posts</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark">Search</a>
-                </li>
-                <!-- @if (SignInManager.IsSignedIn(User)) -->
-                <!-- @if (User.IsInRole("Admin")) -->
-                <li class="nav-item">
-                    <a class="nav-link text-dark">Admin</a>
-                </li>
-            </ul>
-            <!-- <partial name="_LoginPartial" /> -->
+        <ul class="navbar-nav flex-grow-1">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="">Posts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="">Search</a>
+          </li>
+          <!-- @if (SignInManager.IsSignedIn(User)) -->
+          <!-- @if (User.IsInRole("Admin")) -->
+<!--           <li class="nav-item">
+            <a class="nav-link text-dark">Admin</a>
+          </li> -->
+          </ul>
+          <!-- <partial name="_LoginPartial" /> -->
         </div>
       </div>
     </nav>
   </header>
-
-  <app-root></app-root>
-
+  <div>
+    <app-root></app-root>
+  </div>
   <footer class="border-top footer text-muted">
-    <div class="container">
-        &copy; 2023 - SelenicSpark.org -
-        <a>Privacy</a> -
-        <a>Rules</a> -
-        <a>Contacts</a>
+    <div class="align-content-start" style="margin-inline: 12px;">
+      &copy; 2023 - <a class="link-dark text-decoration-none" href="/">SelenicSpark.org</a> -
+      <a class="link-dark" href="/">Privacy</a> -
+      <a class="link-dark" href="/">Rules</a> -
+      <a class="link-dark" href="/">Contacts</a>
     </div>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
   </footer>
 </body>
 </html>

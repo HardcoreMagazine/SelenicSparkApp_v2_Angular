@@ -25,10 +25,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
+              "src/css/styles.css",
+              "src/css/basePage.css",
               "src/lib/bootstrap/css/bootstrap.min.css"
             ],
             "scripts": [
+              "src/lib/jquery/dist/jquery.min.js",
               "src/lib/bootstrap/js/bootstrap.min.js"
             ]
           },
@@ -93,10 +95,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
+              "src/css/styles.css",
+              "src/css/basePage.css",
               "src/lib/bootstrap/css/bootstrap.min.css"
             ],
             "scripts": [
+              "src/lib/jquery/dist/jquery.min.js",
               "src/lib/bootstrap/js/bootstrap.min.js"
             ],
             "karmaConfig": "karma.conf.js"

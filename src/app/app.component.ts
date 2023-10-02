@@ -4,24 +4,31 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: [
+    './app.component.css',
+    '../css/basePage.css',
+    '../lib/bootstrap/css/bootstrap.min.css'
+  ]
 })
+
 export class AppComponent {
-  public posts?: Post[];
+  public user?: User;
 
   constructor(http: HttpClient) {
-    http.get<Post[]>('/posts').subscribe(result => {
-      this.posts = result;
-    }/*, error => console.error(error)*/);
+    http.get<User>('/auth').subscribe({
+      next: (result: User) => {
+        this.user = result;
+      },
+      error: (error: any) => {
+        console.error(error);
+      }
+    });
   }
 
-  title = 'SelenicSparkApp_v2_Angular';
+  title = 'SelenicSparkApp';
 }
 
-interface Post {
-  postID: number;
-  title: string;
-  text: string | undefined;
-  author: string;
-  created: Date;
+interface User {
+  username: string;
+  roles: string[];
 }
