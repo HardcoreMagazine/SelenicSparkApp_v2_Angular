@@ -12,10 +12,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'SelenicSparkApp_v2_Angular'`, () => {
+  it(`should have as title 'SelenicSpark'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('SelenicSparkApp_v2_Angular');
+    expect(app.title).toEqual('SelenicSpark');
   });
 
   it('should render title', () => {
